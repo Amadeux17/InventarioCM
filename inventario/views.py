@@ -4,5 +4,8 @@ from django.http import HttpResponse
 def inicio(request):
     return render(request, "index.html")
 
-def ingresar(request):
-    return render(request, "inventario/ingresar.html")
+def productos(request):
+    return render(request, "productos/index.html")
+
+def categorias(request):
+    return render(request, "categorias/index.html")

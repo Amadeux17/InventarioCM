@@ -1,26 +1,27 @@
 {%extends 'base.html'%}
 
-<!DOCTYPE html>
-<html lang="en">
+{%block title%}Inicio{%endblock%}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{%block title%}Inicio{%endblock%}</title>
-</head>
-
-<body>
-    {% block body %}
-    <div class="card" style="width: 18rem;">
-        <img src="https://files.catbox.moe/1bciej.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Ai Hoshino</h5>
-            <p class="card-text">Ai Hoshino era una hermosa chica con los ojos de color degradado de morado a rosa, con
-                una estrella de seis puntas en cada uno de sus ojos. Ella tenía el cabello de color morado. </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+{% block carrusel %}
+<div id="carouselExampleFade" class="carousel slide carousel-fade">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="static/img/medicina.jpg" class="img-car" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="static/img/medicina1.jpg" class="img-car" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="static/img/medicina2.jpg" class="img-car" alt="...">
         </div>
     </div>
-    {% endblock %}
-</body>
-
-</html>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+{% endblock %}

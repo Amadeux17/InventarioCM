@@ -1,0 +1,52 @@
+{%extends 'base.html'%}
+
+{%block title%}Productos{%endblock%}
+
+{% block body %}
+
+<div class="container-sec">
+    {% include 'productos/modal.html' %}
+
+    <div class="card text-center" style="margin-top: 10px;">
+        <div class="card-header">
+            Lista de Productos
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Categoria</th>
+                            <th scope="col">Stock</th>
+                            <th scope="col">Descripcion</th>
+                            <th scope="col">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="">
+                            <td scope="row">1</td>
+                            <td>Falda</td>
+                            <td>Mujer</td>
+                            <td>12</td>
+                            <td>Mujeres</td>
+                            <td>Editar | Borrar</td>
+                        </tr>
+                        <tr class="">
+                            <td scope="row">2</td>
+                            <td>Somkin</td>
+                            <td>Hombres</td>
+                            <td>4</td>
+                            <td>For Men</td>
+                            <td>Editar | Borrar</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

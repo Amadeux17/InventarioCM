@@ -1,0 +1,24 @@
+nav a,
+h5 {
+    font-family: fantasy;
+}
+
+img.img-car {
+    width: 100%;
+    height: 937px;
+}
+
+nav {
+    background-color: #1a8c97;
+}
+
+a img {
+    width: 32px;
+    height: 32px;
+}
+
+.container-sec {
+    margin-top: 70px;
+    margin-left: 20%;
+    width: 60%;
+}

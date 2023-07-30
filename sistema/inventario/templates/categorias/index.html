@@ -1,0 +1,45 @@
+{%extends 'base.html'%}
+
+{%block title%}Categorias{%endblock%}
+
+{% block body %}
+
+<div class="container-sec">
+    {% include 'categorias/modal.html' %}
+
+    <div class="card text-center" style="margin-top: 10px;">
+        <div class="card-header">
+            Lista de Categorias
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Descripcion</th>
+                            <th scope="col">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="">
+                            <td scope="row">1</td>
+                            <td>Ropa</td>
+                            <td>Mujer</td>
+                            <td>Editar | Borrar</td>
+                        </tr>
+                        <tr class="">
+                            <td scope="row">2</td>
+                            <td>Ropa</td>
+                            <td>Hombres</td>
+                            <td>Editar | Borrar</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock %}
